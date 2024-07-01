@@ -28,8 +28,6 @@ object ScalaJdbcConnectMySQLXL {
         while(resultSet.next())
           {
             val row = sheet.createRow(r)
-//            val empCode = resultSet.getString("emp_code")
-//            val empName = resultSet.getString("emp_name")
             cell = row.createCell(0)
             cell.setCellValue(resultSet.getString("emp_code"))
             cell = row.createCell(1)
